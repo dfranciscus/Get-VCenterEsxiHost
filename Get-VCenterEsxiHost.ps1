@@ -8,13 +8,13 @@
     Get-VCenterEsxiHost -VCenterVMName 'vcenterhost' -ESXiHosts @("host1","host2","host3")
 
 .EXAMPLE
+    . .\Get-VCenterEsxiHost.ps1
     $hosts = @("host1","host2","host3")
     $Credential = Get-Credential
     Get-VCenterEsxiHost -VCenterVMName 'vcenterhost' -ESXiHosts $hosts -RootCredential $Credential
 
-    WARNING: Could not find seaway on host1
-    WARNING: Could not find seaway on host3
-    WARNING: Could not find seaway on host2
+    WARNING: Could not find vcenterhost on host3
+    WARNING: Could not find vcenterhost on host2
 
     Name        VMHost
     ----        ------
